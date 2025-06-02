@@ -39,11 +39,11 @@ jobs:
         
          
         git clone --depth=1 https://github.com/sbwml/luci-app-alist.git -b main
-        mv ./luci-app-alist/alist ./alist
-        rm -rf ./luci-app-alist
+        mv ./sbwml/alist ./alist
+        rm -rf ./sbwml
         git clone --depth=1 https://github.com/sbwml/luci-app-alist.git -b main
-        mv ./luci-app-alist/luci-app-alist ./luci-app-alist
-        rm -rf ./luci-app-alist
+        mv ./sbwml/luci-app-alist ./luci-app-alist
+        rm -rf ./sbwml
         
         
         
