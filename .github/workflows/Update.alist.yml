@@ -37,10 +37,10 @@ jobs:
         rm -rf ./alist
         rm -rf ./luci-app-alist
          
-        git clone https://github.com/immortalwrt/packages.git -b openwrt-24.10
+        git clone https://github.com/jjm2473/packages.git -b istoreos-24.10
         mv ./packages/net/alist  ./alist
         rm -rf ./packages/net
-        git clone https://github.com/immortalwrt/luci.git -b openwrt-24.10
+        git clone https://github.com/jjm2473/luci.git -b istoreos-24.10
         mv ./luci/applications/luci-app-alist ./luci-app-alist
         rm -rf ./luci/applications
         rm -rf ./packages
