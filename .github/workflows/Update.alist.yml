@@ -38,10 +38,10 @@ jobs:
         rm -rf ./alist
         
          
-        git clone --depth=1 https://github.com/kiddin9/kwrt-packages.git -b main
+        git clone --depth=1 https://github.com/sbwml/luci-app-alist.git -b main
         mv ./kwrt-packages/alist ./alist
         rm -rf ./kwrt-packages
-        git clone --depth=1 https://github.com/kiddin9/kwrt-packages.git -b main
+        git clone --depth=1 https://github.com/sbwml/luci-app-alist.git -b main
         mv ./kwrt-packages/luci-app-alist ./luci-app-alist
         rm -rf ./kwrt-packages
         
