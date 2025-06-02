@@ -34,16 +34,13 @@ jobs:
     - name: Update.luci-app-alist
       run: |
 
-        rm -rf ./luci-app-alist
-        rm -rf ./alist
+        rm -rf ./*
         
          
-        git clone --depth=1 https://github.com/sbwml/luci-app-alist.git -b main
-        mv ./sbwml/alist ./alist
-        rm -rf ./sbwml
-        git clone --depth=1 https://github.com/sbwml/luci-app-alist.git -b main
-        mv ./sbwml/luci-app-alist ./luci-app-alist
-        rm -rf ./sbwml
+        git clone https://github.com/sbwml/openwrt-alist -b main ./tmp
+        mv ./tmp/luci-app-alist ./
+        mv ./tmp/alist ./
+        rm -rf ./tmp
         
         
         
