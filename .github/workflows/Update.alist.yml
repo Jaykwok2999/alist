@@ -41,12 +41,12 @@ jobs:
         mv ./packages/net/alist  ./alist
         rm -rf ./packages/net
         git clone https://github.com/immortalwrt/luci.git -b openwrt-24.10
-        sed -i 's/services/nas/g' luci-app-alist/root/usr/share/luci/menu.d/luci-app-alist.json
         mv ./luci/applications/luci-app-alist ./luci-app-alist
         rm -rf ./luci/applications
         rm -rf ./packages
         rm -rf ./luci
-        
+        sed -i 's/services/nas/g' luci-app-alist/po/zh_Hans/alist.po
+        sed -i 's/msgstr "AList"/msgstr "AList文件列表"
     - name: Apply
       run: |
         Emoji=("🎉" "🤞" "✨" "🎁" "🎈" "🎄" "🎨" "💋" "🍓" "🍕" "🍉" "💐" "🌴" "🚀" "🛸" "🗽" "⛅" "🌈" "🔥" "⛄" "🐶" "🏅" "🦄" "🐤")
