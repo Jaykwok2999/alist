@@ -1,5 +1,5 @@
 {
-	"admin/services/alist": {
+	"admin/nas/alist": {
 		"title": "AList",
 		"action": {
 			"type": "firstchild"
@@ -9,7 +9,7 @@
 			"uci": { "alist": true }
 		}
 	},
-	"admin/services/alist/config": {
+	"admin/nas/alist/config": {
 		"title": "Settings",
 		"order": 10,
 		"action": {
@@ -17,7 +17,7 @@
 			"path": "alist/config"
 		}
 	},
-	"admin/services/alist/log": {
+	"admin/nas/alist/log": {
 		"title": "Log",
 		"order": 20,
 		"action": {
